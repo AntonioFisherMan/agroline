@@ -1,24 +1,41 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Nav.css'
 import { connect } from 'react-redux'
 import { logout } from '../../redux/AuthReducer'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+const ReactDOM = require('react-dom')
 
 const Nav = (props) => {
+    const [value, setValue] = useState("")
+    const [focused, setFocused] = useState(false)
 
+
+    const handleChange = (e) => {
+        setValue(e.target.value)
+    }
+    const clearPlaceholder=()=>{
+        setValue("")  
+        setFocused(false)
+    }
+    const searchHandler=()=>{
+        debugger
+    }
     return (
         <>
             <div class="nav">
-                <div className="container"> 
+                <div className="container">
                     <div className="row">
                         <div className="col-2 backToPage">
                             <img src="images/svg/back.svg" alt="" />
                         </div>
                         <div className="col-10">
                             <div className="d-flex align-items-center">
-                                <input dir="rtl"type="search" className="search" placeholder="הזמנות לקוח"/>
-                                <span class="icon"><img src="images/svg/search.svg" alt="" /></span>
-                  
+                                <input dir="rtl" type="search" className="search" value={value} onFocus={()=>setFocused(true)}  onChange={(e) => handleChange(e)}placeholder="הזמנות לקוח"  />
+                                <div>
+                                    {value!==""&&focused?<img src="images/svg/cross.svg" onClick={()=>clearPlaceholder()}  alt="" /> : <img src="images/svg/search.svg" onClick={()=>searchHandler()}alt="" />}
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -37,7 +54,7 @@ const Nav = (props) => {
         //     <div className="logo">
         //     <p>AGROLINE</p>
         //     </div>
-
+        // placeholder=""
 
         //  </div>
     )
