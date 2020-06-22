@@ -98,7 +98,7 @@ const Orders = () => {
                         <div className="col-9">
                             <div className="price">
                                 <div className="buttonBlock">
-                                    <button>פתוחה</button>
+                                <button style={{color:'9D9D9D'}}>פתוחה</button>
                                 </div>
 
                                 <p>325</p>
@@ -143,7 +143,7 @@ const Orders = () => {
                         <div className="col-9">
                             <div className="price">
                                 <div className="buttonBlock">
-                                    <button>פתוחה</button>
+                                    <button style={{color:'F2994A'}}>פתוחה</button>
                                 </div>
 
                                 <p>325</p>
