@@ -23,10 +23,6 @@ const Nav = (props) => {
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </>
         // <div className="nav d-flex ">

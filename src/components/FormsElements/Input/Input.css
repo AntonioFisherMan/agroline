@@ -42,10 +42,9 @@
 .jss3{
   all: unset !important;
   display: none !important;
+  top:-1px !important;
 }
-.PrivateNotchedOutline-root-1{
-  top:-1px !important
-}
+
 .MuiOutlinedInput-root:hover{
  border: none !important;
 }

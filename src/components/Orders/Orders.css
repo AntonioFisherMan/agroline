@@ -76,7 +76,7 @@
 }
 ::-webkit-calendar-picker-indicator { position: absolute; width: 100px;background: none; }
 .addOrder{
-    bottom: 10px;
+    bottom: 0px;
     position: absolute;
     z-index: 5;
     margin-right: 10px;
