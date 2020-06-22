@@ -1,0 +1,51 @@
+.formControl .error {
+  border: 1px solid red;
+}
+.formControl{
+  margin-top: 20px;
+}
+.MuiInputLabel-formControl {
+  top: -5px !important;
+}
+.success {
+  border: 2px solid #8BC43F !important;
+  border-top: 3px;
+  border-radius: 40px;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline{
+  border:1px solid #ddebe4 !important;
+}
+.MuiFormHelperText-root.Mui-error { 
+  display: flex;
+}
+.MuiInputLabel-outlined {
+  transform: translate(244px, 20px) scale(1) !important;
+}
+.password .MuiInputLabel-outlined {
+  transform: translate(255px, 20px) scale(1) !important;
+} 
+.PrivateNotchedOutline-legendLabelled-3>span{
+  background: red;
+}
+ .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(250px, -10px) scale(0.8) !important;
+} 
+.password .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(260px, -10px) scale(0.8) !important;
+} 
+.MuiFormLabel-filled{
+  color:  #8BC43F !important;
+}
+.Mui-focused{
+  color:  grey  !important;
+}
+.jss3{
+  all: unset !important;
+  display: none !important;
+}
+.PrivateNotchedOutline-root-1{
+  top:-1px !important
+}
+.MuiOutlinedInput-root:hover{
+ border: none !important;
+}

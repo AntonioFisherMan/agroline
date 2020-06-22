@@ -1,0 +1,10 @@
+.filterBlock{
+    margin-top: 20px;
+}
+.filterDate{
+    display: flex;
+    flex-direction: row;
+}
+.filterDateField{
+   margin:0px 10px 0px 10px
+}
