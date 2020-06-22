@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../Nav/Nav'
 import './Orders.css'
-
+import $ from 'jquery'
 
 
 
@@ -10,6 +10,13 @@ import './Orders.css'
 
 const Orders = () => {
 
+    var curr = new Date();
+    curr.setDate(curr.getDate());
+    var date = curr.toISOString().substr(0,10);
+       
+    var curr = new Date();
+    curr.setDate(curr.getDate()+3);
+    var endDate = curr.toISOString().substr(0,10);
     return (
         <div className="body">
             <Nav />
@@ -18,7 +25,7 @@ const Orders = () => {
                 <div className="col-5">
                     <div className="startDate">
                         <label htmlFor="startDate">עד תאריך</label>
-                        <input type="date"  name="startDate" style={{color:' #1A1207',opacity: 0.6}}id="startDate" />
+                        <input type="date"  defaultValue={date} name="startDate" style={{color:' #1A1207',opacity: 0.6}}id="calendar" />
                     </div>
 
                 </div>
@@ -28,7 +35,7 @@ const Orders = () => {
                 <div className="col-5">
                     <div className="endDate">
                         <label htmlFor="endDate">עד תאריך</label>
-                        <input type="date"name="endDate" style={{color:' #1A1207',opacity: 0.6}}id="endDate" />
+                        <input type="date"name="endDate" defaultValue={endDate} style={{color:' #1A1207',opacity: 0.6}}id="endDate" />
                     </div>
                 </div>
             </div>
